@@ -480,6 +480,7 @@ h3 {
             color: $white;
             text-align: center;
             text-transform: uppercase;
+            padding-bottom: 20px;
             @media (max-width: 576px) {
                 font-size: 17px;
             }
@@ -503,6 +504,9 @@ h3 {
         padding-bottom: 63px;
     }
     .contacts {
+        @media (max-width: 768px) {
+            padding-bottom: 20px;
+        }
         h5 {
             color: $line-color;
             line-height: 34px;
@@ -602,97 +606,4 @@ h3 {
             color: $network-color;
         }
     }
-}
-
-.footer {
-    padding-top: 92px;
-    background: $footer-bg;
-    color: $white;
-    font-size: 13px;
-    p {
-        line-height: 23px;
-        width: 92%;
-    }
-    .arrow {
-        position: relative;
-        float: right;
-    }
-    .col-brandi {
-        h4 {
-            font: 300 28px 'Pacifico', cursive;
-            padding-bottom: 19px;
-        }
-    }
-    .form-control {
-        background: transparent;
-        border: 2px solid $white;
-        position: relative;
-        padding: 20px;
-        margin-bottom: 19px;
-    }
-    .arrow::after {
-        content: "\ea3c";
-        font-size: 22px;
-        font-family: icomoon!important;
-        color: $white;
-        top: -57px;
-        right: 16px;
-        margin: auto;
-        position: absolute;
-    }
-    .col-explore,
-    .col-subscribe {
-        h4 {
-            margin-bottom: 46px;
-            padding-top: 20px;
-            color: $white-opacity;
-            font: 600 14px 'Open Sans', sans-serif;
-        }
-    }
-    .col-explore {
-        .row {
-            margin-top: -8px;
-        }
-        a {
-            padding-bottom: 11px;
-            display: flex;
-            flex-direction: column;
-            color: $white;
-        }
-    }
-    .col-create {
-        padding-top: 75px;
-        padding-left: 47px;
-        span {
-            &::before {
-                color: #157562;
-                font-size: 14px;
-            }
-        }
-        .copyright {
-            display: block;
-            padding-top: 30px;
-            color: #062033;
-            @media (max-width: 576px) {
-                float: right;
-                padding-right: 27px;
-            }
-        }
-        .odd-text {
-            text-decoration: none;
-            color: #062033;
-        }
-    }
-    .text-foot {
-        border-left: 1px solid #062033;
-        padding-left: 10px;
-        margin-left: 10px;
-    }
-    .row-footer {
-        margin-bottom: -24px;
-    }
-}
-
-.test {
-    height: 400px;
 }
