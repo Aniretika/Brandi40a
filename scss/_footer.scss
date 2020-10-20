@@ -1,0 +1,93 @@
+.footer {
+    padding-top: 92px;
+    background: $footer-bg;
+    color: $white;
+    font-size: 13px;
+    p {
+        line-height: 23px;
+        width: 92%;
+    }
+    .arrow {
+        position: relative;
+        float: right;
+    }
+    .col-brandi {
+        h4 {
+            font: 300 28px 'Pacifico', cursive;
+            padding-bottom: 19px;
+        }
+    }
+    .form-control {
+        background: transparent;
+        border: 2px solid $white;
+        position: relative;
+        padding: 20px 60px 20px 20px;
+        margin-bottom: 19px;
+    }
+    .arrow::after {
+        content: "\ea3c";
+        font-size: 22px;
+        font-family: icomoon!important;
+        color: $white;
+        top: -57px;
+        right: 16px;
+        margin: auto;
+        position: absolute;
+    }
+    .col-explore,
+    .col-subscribe {
+        h4 {
+            margin-bottom: 46px;
+            padding-top: 20px;
+            color: $white-opacity;
+            font: 600 14px 'Open Sans', sans-serif;
+        }
+    }
+    .col-explore {
+        .row {
+            margin-top: -8px;
+        }
+        a {
+            padding-bottom: 11px;
+            display: flex;
+            flex-direction: column;
+            color: $white;
+        }
+    }
+    .col-create {
+        padding-top: 75px;
+        padding-left: 47px;
+        span {
+            &::before {
+                color: #157562;
+                font-size: 14px;
+            }
+        }
+        .copyright {
+            display: block;
+            padding-top: 30px;
+            color: #062033;
+            @media (max-width: 576px) {
+                float: right;
+                padding-right: 27px;
+                padding-bottom: 20px;
+            }
+        }
+        .odd-text {
+            text-decoration: none;
+            color: #062033;
+        }
+    }
+    .text-foot {
+        border-left: 1px solid #062033;
+        padding-left: 10px;
+        margin-left: 10px;
+        @media (max-width: 576px) {
+            padding-right: 27px;
+            float: right;
+        }
+    }
+    .row-footer {
+        margin-bottom: -24px;
+    }
+}
