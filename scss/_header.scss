@@ -1,0 +1,193 @@
+@import "_mixins";
+.header {
+    height: 70px;
+    background: rgba(16, 22, 54, 0.2);
+    position: relative;
+    z-index: 2;
+    @media (max-width: 991.98px) {
+        background: $line-color;
+    }
+    .container {
+        @media (max-width: 993px) {
+            padding-top: 10px;
+        }
+        h1 {
+            padding-top: 11px;
+            line-height: 52px;
+            margin: 0;
+            @media (max-width: 993px) {
+                padding-top: 0;
+            }
+            .addition-header {
+                font: 300 13px 'Open Sans', sans-serif;
+                color: $add-header-color;
+                padding-left: 35px;
+                &::before {
+                    content: '';
+                    border-left: 1px solid $hov-effect;
+                    padding-left: 20px;
+                }
+            }
+        }
+        .navbar {
+            padding: 0;
+        }
+        .navbar-nav {
+            font-size: 13px;
+            margin-top: -6px;
+            @media (max-width: 991.98px) {
+                background: $line-color;
+                padding-top: 0;
+            }
+            li {
+                @media (max-width: 991.98px) {
+                    padding-bottom: 40px;
+                    border-bottom: 2px solid transparent;
+                }
+                a {
+                    @media (max-width: 991.98px) {
+                        text-align: center;
+                        font-size: 20px;
+                        line-height: 40px;
+                    }
+                    border-top: 2px solid transparent;
+                    padding-top: 26px;
+                    margin-left: 12px;
+                    color: $white;
+                    &.active {
+                        color: $white;
+                        border-top: 1px solid$hov-effect;
+                    }
+                    @media (max-width: 991.98px) {
+                        border: 2px solid transparent;
+                    }
+                }
+                &:focus {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.burger {
+    svg {
+        color: #fff;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.navbar-toggler {
+    border: 2px solid #fff;
+    &:focus {
+        border: none;
+    }
+}
+
+.carousel {
+    position: relative;
+    margin-top: -70px;
+    .carousel-indicators {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        margin-right: 3%;
+        bottom: 40%;
+        @media (max-width: 991.98px) {
+            bottom: 10%;
+            @media (max-width: 768px) {
+                opacity: 0;
+            }
+        }
+        li {
+            margin-bottom: 20px;
+            border: 2px solid $white;
+            display: block;
+            border-radius: 50%;
+            width: 9px;
+            height: 9px;
+            background: none;
+        }
+        .active {
+            background: $white;
+        }
+    }
+    img {
+        height: 100vh;
+        @media (max-width: 991.98px) {
+            height: auto
+        }
+    }
+    .carousel-caption {
+        z-index: 0;
+        margin-bottom: 119px;
+        @media (max-width: 991.98px) {
+            bottom: -42px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+    h2 {
+        font: 300 62px 'Open Sans', sans-serif;
+        color: $white;
+        .header-weight {
+            font-weight: 600;
+        }
+        .down-header {
+            display: block;
+            padding-bottom: 10px;
+            font-size: 47px;
+            line-height: 38px;
+            @media (max-width: 991.98px) {
+                line-height: 47px;
+            }
+            span {
+                color: $down-header-color;
+            }
+        }
+    }
+    .sibtitle {
+        font-size: 18px;
+        line-height: 40px;
+        overflow: hidden;
+        text-align: center;
+        color: #fff;
+        padding-bottom: 19px;
+        &:before {
+            margin-left: -100%;
+        }
+        &:after {
+            margin-right: -100%;
+        }
+        &:before,
+        &:after {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            box-sizing: border-box;
+            height: 1px;
+            background: $white;
+            border: solid $down-header-color;
+            border-width: 0 10px;
+        }
+    }
+}
+
+.socials {
+    text-align: center;
+    position: relative;
+    margin-top: -84px;
+    @media (max-width: 991.98px) {
+        margin-top: -50px;
+    }
+    a {
+        opacity: .3;
+        margin-left: 10px;
+        text-decoration: none;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
